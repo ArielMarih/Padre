@@ -12043,3 +12043,13 @@ a[data-toggle="collapse"] {
     display: none;
   }
 }
+
+.login{
+  width: 400px;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.loginBody{
+  background-color: #004085;
+}
