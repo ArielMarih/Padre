@@ -1,11 +1,11 @@
-(function($) {
+(function ($) {
 
 	"use strict";
 
-	var fullHeight = function() {
+	var fullHeight = function () {
 
 		$('.js-fullheight').css('height', $(window).height());
-		$(window).resize(function(){
+		$(window).resize(function () {
 			$('.js-fullheight').css('height', $(window).height());
 		});
 
@@ -13,28 +13,31 @@
 	fullHeight();
 
 	$('#sidebarCollapse').on('click', function () {
-      $('#sidebar').toggleClass('active');
-  });
+		$('#sidebar').toggleClass('active');
+	});
 
 })(jQuery);
 
-function login() {
+
+login = function () {
 	console.log("login");
-  
-	$(document).ready(function() {
-	  let forms = $(".needs-validation");
-	  $.each(forms, function(index, form) {
-		$(form).submit(function(event) {
-		  if (form.checkValidity() === false) {
-			event.preventDefault();
-			event.stopPropagation()
-		  }
-		  $(form).addClass("was-validated");
+
+	$(document).ready(function () {
+		let forms = $(".needs-validation");
+		$.each(forms, function (index, form) {
+			$(form).submit(function (event) {
+				if (form.checkValidity() === false) {
+					event.preventDefault();
+					event.stopPropagation()
+				}
+				$(form).addClass("was-validated");
+			})
 		})
-	  })
-	  $(forms[0]).trigger("submit");
+		//   $(forms[0]).trigger("submit");
 	});
-  }
+}
+
+
 
 // (function() {
 // 	'use strict';
