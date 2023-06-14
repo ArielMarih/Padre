@@ -18,7 +18,7 @@ function sum(a, b) {
 // Llamada a función
 let result = sum(3, 4);
 console.log(result); // Imprime: 7
- 
+  
 // Función anónima
 let multiply = function (a, b) {
   return a * b;
